@@ -22,9 +22,30 @@
 
         Returns
         int a'[n]: the rotated array
+        
 
 
     Command/Script to Run Problem 1: ________________ (Fill this in when submitting)
+    
+    def rotLeft(a, d): 
+    
+    j=0
+    b =a.copy()
+    l = len(a)
+    
+    for i in range(d,l):
+        
+        b[j] = a[i]
+       
+        j+=1
+    
+    for i in range (0,d): 
+        
+        b[j] = a[i]
+        j+=1
+        
+    return b
+
 
 ## Problem 2: Array Reversal
 
